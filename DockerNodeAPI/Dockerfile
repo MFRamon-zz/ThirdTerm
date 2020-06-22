@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 RUN npm install -g typescript
 RUN npm install
-RUN tsc
+RUN tsc -p .
 
 EXPOSE 3000
 
