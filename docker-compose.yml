@@ -27,7 +27,7 @@ services:
       - "./mongodb/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro"
       - "/opt/mongodb/data/db:/data/db"
     environment:
-      - VIRTUAL_HOST=localhost
+      - VIRTUAL_HOST=192.168.118.128
   angular-dashboard:
     container_name: "Angular-Dashboard"
     build:
@@ -35,7 +35,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      - VIRTUAL_HOST=localhost
+      - VIRTUAL_HOST=192.168.118.128
   node-api:
     container_name: "Node-API"
     ports:
@@ -45,4 +45,4 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      - VIRTUAL_HOST=localhost
+      - VIRTUAL_HOST=192.168.118.128
