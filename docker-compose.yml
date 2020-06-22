@@ -18,9 +18,9 @@ services:
     container_name: "MongoDB-Container"
     restart: always
     environment:
-      - MONGO_INITDB_DATABASE: "dbAuth"
-      - MONGO_INITDB_ROOT_USERNAME: "dba-ramon"
-      - MONGO_INITDB_ROOT_PASSWORD: "mongoPass123"
+      - MONGO_INITDB_DATABASE=dbAuth
+      - MONGO_INITDB_ROOT_USERNAME=dba-ramon
+      - MONGO_INITDB_ROOT_PASSWORD=mongoPass123
     ports:
       - "27017:27017"
     volumes:
