@@ -42,3 +42,5 @@ services:
       context: ./DockerNodeAPI
       dockerfile: Dockerfile
     restart: always
+    environment:
+      - VIRTUAL_HOST=appramon.com
