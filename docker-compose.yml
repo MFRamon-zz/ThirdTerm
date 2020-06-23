@@ -1,18 +1,6 @@
 
 version: "3"
 services:
-  reverse-proxy:
-    image: jwilder/nginx-proxy:alpine
-    container_name: "Reverse-Proxy"
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      # - ./reverse_proxy.conf:/etc/nginx/conf.d/reverse_proxy.conf:ro
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-      - /etc/nginx/vhost.d
-      - /usr/share/nginx/html
   mongo-db:
     image: "mongo"
     container_name: "MongoDB-Container"
