@@ -7,7 +7,7 @@ export const environment = {
   API: {
     EndPoint: {
       Northwind: 'https://localhost:44337/v1/analysis/northwind/',
-      NODE: 'http://appramon.com:3000'
+      NODE: 'http://localhost:3000'
     }
   }
 };
